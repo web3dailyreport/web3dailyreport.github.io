@@ -1,0 +1,8 @@
+# Blockfront
+
+> Blockfront reports crypto news: Bitcoin and Ethereum, DeFi protocols, exchanges, regulation, security incidents, funding rounds and network upgrades.
+
+## Key pages
+- [Homepage](https://web3dailyreport.github.io/): latest reporting and analysis.
+- [About](https://web3dailyreport.github.io/about/): editorial scope, independence, sourcing and corrections.
+- [Archive](https://web3dailyreport.github.io/archive/): everything published.
