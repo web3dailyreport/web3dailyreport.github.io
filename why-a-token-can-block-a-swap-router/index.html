@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Why Tokens Block Swap Routers | Blockfront</title>
+<meta name="description" content="A token can reject a swap router through pause, blacklist or transfer rules; allowance and liquidity are separate checks, so a good quote can still fail.">
+<link rel="canonical" href="https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#120a17">
+<meta name="author" content="Blockfront Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blockfront">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why a token can block a swap router">
+<meta property="og:description" content="A token can reject a swap router through pause, blacklist or transfer rules; allowance and liquidity are separate checks, so a good quote can still fail.">
+<meta property="og:url" content="https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/">
+<meta property="og:image" content="https://web3dailyreport.github.io/assets/covers/why-a-token-can-block-a-swap-router-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why a token can block a swap router"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why a token can block a swap router">
+<meta name="twitter:description" content="A token can reject a swap router through pause, blacklist or transfer rules; allowance and liquidity are separate checks, so a good quote can still fail.">
+<meta property="article:published_time" content="2026-10-04T15:52:52+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s3a3a289c47.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blockfront" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/#webpage",
+      "url": "https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/",
+      "name": "Why Tokens Block Swap Routers | Blockfront",
+      "isPartOf": {
+        "@id": "https://web3dailyreport.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/#article",
+      "headline": "Why a token can block a swap router",
+      "isAccessibleForFree": true,
+      "description": "A token can reject a swap router through pause, blacklist or transfer rules; allowance and liquidity are separate checks, so a good quote can still fail.",
+      "datePublished": "2026-10-04T15:52:52+00:00",
+      "dateModified": "2026-10-04T15:52:52+00:00",
+      "url": "https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/",
+      "mainEntityOfPage": {
+        "@id": "https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "wordCount": 398,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/why-a-token-can-block-a-swap-router-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/why-a-token-can-block-a-swap-router-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/why-a-token-can-block-a-swap-router-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://web3dailyreport.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why a token can block a swap router",
+          "item": "https://web3dailyreport.github.io/why-a-token-can-block-a-swap-router/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://web3dailyreport.github.io/#org",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web3dailyreport.github.io/#website",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Blockfront reports crypto news: Bitcoin and Ethereum, DeFi protocols, exchanges, regulation, security incidents, funding rounds and network upgrades."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s2c9485b" href="#main">Skip to main content</a>
+<header class="sd3343df">
+  <div class="s417c705">
+    <a class="s783b774" href="/">Blockfront</a>
+    <p class="s99472fa">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s1984bdb s258ddc5">
+  <div class="se79ce3a">
+    <h1 class="sa02954d">Why a token can block a swap router</h1>
+<p class="scbb976d">A token can reject a swap router through pause, blacklist or transfer rules; allowance and liquidity are separate checks, so a good quote can still fail.</p>    <div class="sa0676ec">
+      <span class="sd4c00f3">Blockfront Editorial</span>
+      <p class="s5866ebd"><time datetime="2026-10-04T15:52:52+00:00">Oct 4, 2026</time><span class="s06d038c">2 min read</span></p>
+    </div>
+  </div>
+<figure class="s8b27988"><img fetchpriority="high" class="s76a7705" src="/assets/covers/why-a-token-can-block-a-swap-router.jpg" alt="Abstract cover artwork"></figure>  <div class="s454fb01"><p>A token can block a swap router by rejecting the token transfer the router needs to execute a trade. The router can assemble the swap and have enough allowance, yet the token contract can still revert the transaction.</p>
+
+<p>To see the wallet steps for a specific interface, read this guide to <a href="https://jack-web3-news.mataroa.blog/blog/how-to-use-blackhole-swap-from-your-wallet/" rel="noopener">using Blackhole Swap from your wallet</a>. The same transfer checks apply across swap interfaces; changing interfaces does not by itself change the token’s rules.</p>
+
+<h2>How does a router move tokens?</h2>
+
+<p>A router typically uses the holder’s approval to call the token’s <code>transferFrom</code> function, then sends tokens into a liquidity pool as part of the swap. The token contract processes that transfer, so it can stop the trade before the pool completes its part.</p>
+
+<p>OpenZeppelin’s ERC20Pausable model, for example, requires transfers to happen only while the token is not paused. Token contracts can also add rules that check the sender, recipient, trading status or amount. A rule that rejects the router, the pool or the wallet can make the transfer fail.</p>
+
+<h2>What can make the transfer fail?</h2>
+
+<p>The failure may come from the token, the approval or the pool. These checks happen at different points, and a displayed price quote does not prove that each one will pass when the transaction runs.</p>
+
+<ul>
+<li><strong>Pause or trading switch:</strong> transfers may be disabled globally or until trading is enabled.</li>
+<li><strong>Address restriction:</strong> a blocklist or allowlist can reject a wallet, router or pool address.</li>
+<li><strong>Transfer condition:</strong> a maximum transaction size, wallet limit or token fee can affect the transfer.</li>
+<li><strong>Approval or liquidity:</strong> too little allowance, too little balance or a pool unable to fill the trade can also cause failure.</li>
+</ul>
+
+<p>These rules are written into the token contract, not the name shown in a wallet. A failed blackhole swap therefore does not, on its own, show whether the router was blocked or another check failed.</p>
+
+<h2>How can a trader identify the cause?</h2>
+
+<p>Check the failed transaction’s error and call trace, if available, to see which contract call reverted. Then check the token’s allowance to the router, wallet balance, pool liquidity and any public pause or trading settings; these checks help separate a token rule from a setup issue.</p>
+
+<p>If the token itself rejects the transfer, changing slippage or repeating the approval will not remove that rule. The trade can proceed only if the condition changes or the contract permits the transfer.</p></div>
+  <aside class="sd7a0d45">
+    <h2 class="s45b955b">Related stories</h2>
+    <ul class="s4cfbfd4">
+<li><a href="/why-manta-bridge-deposits-wait-after-ethereum/">Why Manta Bridge Deposits Wait After Ethereum</a></li><li><a href="/manta-bridge-withdrawals-how-state-roots-affect-your-exit/">Manta Bridge withdrawals: how state roots affect your exit</a></li><li><a href="/how-to-trace-a-crypto-swap-route/">How to Trace a Crypto Swap Route</a></li><li><a href="/blast-to-wind-down-ethereum-layer-2-after-tvl-falls-98/">Blast to wind down Ethereum layer-2 after TVL falls 98%</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s6d8bab8">
+  <div class="s21d2a1e">
+    <p class="s0024b40">Blockfront</p>
+    <nav class="s1cd1faf" aria-label="Site">
+<a href="/">Front page</a><a href="/archive/">All articles</a><a href="/about/">About us</a><a href="/privacy/">Privacy policy</a>    </nav>
+    <p class="s2b5e948">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s975e619">© 2026 Blockfront</p>
+  </div>
+</footer>
+</body>
+</html>
