@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manta withdrawal proofs: how to verify a release</title>
+<meta name="description" content="Manta withdrawal proofs connect an L2 message to an output root; check the transaction, inclusion proof and Ethereum portal state before calling a release complete.">
+<link rel="canonical" href="https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#120a17">
+<meta name="author" content="Blockfront Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blockfront">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to audit Manta withdrawal release proofs">
+<meta property="og:description" content="Manta withdrawal proofs connect an L2 message to an output root; check the transaction, inclusion proof and Ethereum portal state before calling a release complete.">
+<meta property="og:url" content="https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/">
+<meta property="og:image" content="https://web3dailyreport.github.io/assets/covers/how-to-audit-manta-withdrawal-release-proofs-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to audit Manta withdrawal release proofs"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to audit Manta withdrawal release proofs">
+<meta name="twitter:description" content="Manta withdrawal proofs connect an L2 message to an output root; check the transaction, inclusion proof and Ethereum portal state before calling a release complete.">
+<meta property="article:published_time" content="2026-10-04T03:52:38+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s3a3a289c47.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blockfront" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/#webpage",
+      "url": "https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/",
+      "name": "Manta withdrawal proofs: how to verify a release",
+      "isPartOf": {
+        "@id": "https://web3dailyreport.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/#article",
+      "headline": "How to audit Manta withdrawal release proofs",
+      "isAccessibleForFree": true,
+      "description": "Manta withdrawal proofs connect an L2 message to an output root; check the transaction, inclusion proof and Ethereum portal state before calling a release complete.",
+      "datePublished": "2026-10-04T03:52:38+00:00",
+      "dateModified": "2026-10-04T03:52:38+00:00",
+      "url": "https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/",
+      "mainEntityOfPage": {
+        "@id": "https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "wordCount": 368,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/how-to-audit-manta-withdrawal-release-proofs-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/how-to-audit-manta-withdrawal-release-proofs-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/how-to-audit-manta-withdrawal-release-proofs-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://web3dailyreport.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to audit Manta withdrawal release proofs",
+          "item": "https://web3dailyreport.github.io/how-to-audit-manta-withdrawal-release-proofs/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://web3dailyreport.github.io/#org",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web3dailyreport.github.io/#website",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Blockfront reports crypto news: Bitcoin and Ethereum, DeFi protocols, exchanges, regulation, security incidents, funding rounds and network upgrades."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s2c9485b" href="#main">Skip to main content</a>
+<header class="sd3343df">
+  <div class="s417c705">
+    <a class="s783b774" href="/">Blockfront</a>
+    <p class="s99472fa">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s1984bdb s258ddc5">
+  <div class="se79ce3a">
+    <h1 class="sa02954d">How to audit Manta withdrawal release proofs</h1>
+<p class="scbb976d">Manta withdrawal proofs connect an L2 message to an output root; check the transaction, inclusion proof and Ethereum portal state before calling a release complete.</p>    <div class="sa0676ec">
+      <span class="sd4c00f3">Blockfront Editorial</span>
+      <p class="s5866ebd"><time datetime="2026-10-04T03:52:38+00:00">Oct 4, 2026</time><span class="s06d038c">2 min read</span></p>
+    </div>
+  </div>
+<figure class="s8b27988"><img fetchpriority="high" class="s76a7705" src="/assets/covers/how-to-audit-manta-withdrawal-release-proofs.jpg" alt="Abstract cover artwork"></figure>  <div class="s454fb01"><p>To audit a Manta Pacific withdrawal, match the L2 message to its output root, verify the inclusion proof on Ethereum and confirm the portal records the withdrawal as proven before it is finalized.</p>
+
+<h2>What does a withdrawal proof show?</h2>
+<p>The OP Stack withdrawal specification describes a proof that shows a withdrawal message was recorded in the L2-to-L1 message passer’s storage. The message contains the destination, value, sender and call data; its hash must match the leaf proven by the storage inclusion path.</p>
+<p>Manta’s published OptimismPortal contract exposes a proof function that takes the withdrawal, an output index, output-root fields and a proof path. For background on how routes differ, see this guide to <a href="https://nanso-wills-hvvptshnsgo60ufvnsvnj.justblogged.com/manta-bridge-types-explained-native-fast-routed" rel="noopener">native and routed Manta bridge paths</a>; the route determines which system’s proof and release rules apply.</p>
+
+<h2>Which fields should you check?</h2>
+<p>Start with the L2 transaction that initiated the withdrawal, then compare the proof data with the L1 portal record. The portal contract’s interface identifies the fields needed to check that relationship:</p>
+<ul>
+<li><strong>Withdrawal:</strong> compare sender, recipient, value, gas limit and data with the L2 transaction.</li>
+<li><strong>Output:</strong> confirm the output index and that the supplied state root, message-passer storage root and block hash reconstruct the referenced output root.</li>
+<li><strong>Inclusion:</strong> check that the proof path places the withdrawal hash in the message-passer storage committed by that root.</li>
+<li><strong>Portal status:</strong> look for a matching proven-withdrawal record and check its output reference and timestamp.</li>
+</ul>
+<p>A successful wallet prompt or bridge-history label is not proof that these fields match. Verify the transaction hashes and contract events against the relevant chain records.</p>
+
+<h2>When is the withdrawal released?</h2>
+<p>Proof submission and release are separate steps: the portal first accepts a proof, then permits finalization once the applicable waiting or challenge condition is met. The OP Stack specification describes finalization through the portal after that period; Manta’s fast-finality design can affect withdrawal timing, so check the current portal and output status instead of assuming a fixed delay.</p>
+<p>Before finalizing, confirm the same withdrawal remains proven, the output is eligible and the portal has not already marked it complete. The useful audit result is a matched L2 message, valid inclusion under its output root, and an L1 finalization record for that same withdrawal.</p></div>
+  <aside class="sd7a0d45">
+    <h2 class="s45b955b">Related stories</h2>
+    <ul class="s4cfbfd4">
+<li><a href="/sec-proposes-conditional-crypto-self-custody-rules-for-advisers/">SEC proposes conditional crypto self-custody rules for advisers</a></li><li><a href="/why-account-funding-delays-cross-chain-payouts/">Why Account Funding Delays Cross-Chain Payouts</a></li><li><a href="/why-a-token-trade-shows-as-a-contract-call-in-your-wallet/">Why a token trade shows as a contract call in your wallet</a></li><li><a href="/wallet-swap-or-exchange-for-a-trc-20-token/">Wallet Swap or Exchange for a TRC-20 Token?</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s6d8bab8">
+  <div class="s21d2a1e">
+    <p class="s0024b40">Blockfront</p>
+    <nav class="s1cd1faf" aria-label="Site">
+<a href="/">Front page</a><a href="/archive/">All articles</a><a href="/about/">About us</a><a href="/privacy/">Privacy policy</a>    </nav>
+    <p class="s2b5e948">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s975e619">© 2026 Blockfront</p>
+  </div>
+</footer>
+</body>
+</html>
