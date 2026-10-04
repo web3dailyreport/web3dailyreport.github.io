@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cross-Chain Payout Delays: How Account Funding Works</title>
+<meta name="description" content="Account funding can delay cross-chain payouts because deposits must clear source-chain checks before a swap executes and destination funds can be signed and sent.">
+<link rel="canonical" href="https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#120a17">
+<meta name="author" content="Blockfront Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blockfront">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Why Account Funding Delays Cross-Chain Payouts">
+<meta property="og:description" content="Account funding can delay cross-chain payouts because deposits must clear source-chain checks before a swap executes and destination funds can be signed and sent.">
+<meta property="og:url" content="https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/">
+<meta property="og:image" content="https://web3dailyreport.github.io/assets/covers/why-account-funding-delays-cross-chain-payouts-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Why Account Funding Delays Cross-Chain Payouts"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Why Account Funding Delays Cross-Chain Payouts">
+<meta name="twitter:description" content="Account funding can delay cross-chain payouts because deposits must clear source-chain checks before a swap executes and destination funds can be signed and sent.">
+<meta property="article:published_time" content="2026-10-04T01:17:53+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s3a3a289c47.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blockfront" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/#webpage",
+      "url": "https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/",
+      "name": "Cross-Chain Payout Delays: How Account Funding Works",
+      "isPartOf": {
+        "@id": "https://web3dailyreport.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/#article",
+      "headline": "Why Account Funding Delays Cross-Chain Payouts",
+      "isAccessibleForFree": true,
+      "description": "Account funding can delay cross-chain payouts because deposits must clear source-chain checks before a swap executes and destination funds can be signed and sent.",
+      "datePublished": "2026-10-04T01:17:53+00:00",
+      "dateModified": "2026-10-04T01:17:53+00:00",
+      "url": "https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/",
+      "mainEntityOfPage": {
+        "@id": "https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "wordCount": 378,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/why-account-funding-delays-cross-chain-payouts-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/why-account-funding-delays-cross-chain-payouts-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/why-account-funding-delays-cross-chain-payouts-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://web3dailyreport.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Why Account Funding Delays Cross-Chain Payouts",
+          "item": "https://web3dailyreport.github.io/why-account-funding-delays-cross-chain-payouts/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://web3dailyreport.github.io/#org",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web3dailyreport.github.io/#website",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Blockfront reports crypto news: Bitcoin and Ethereum, DeFi protocols, exchanges, regulation, security incidents, funding rounds and network upgrades."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s2c9485b" href="#main">Skip to main content</a>
+<header class="sd3343df">
+  <div class="s417c705">
+    <a class="s783b774" href="/">Blockfront</a>
+    <p class="s99472fa">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s1984bdb s258ddc5">
+  <div class="se79ce3a">
+    <h1 class="sa02954d">Why Account Funding Delays Cross-Chain Payouts</h1>
+<p class="scbb976d">Account funding can delay cross-chain payouts because deposits must clear source-chain checks before a swap executes and destination funds can be signed and sent.</p>    <div class="sa0676ec">
+      <span class="sd4c00f3">Blockfront Editorial</span>
+      <p class="s5866ebd"><time datetime="2026-10-04T01:17:53+00:00">Oct 4, 2026</time><span class="s06d038c">2 min read</span></p>
+    </div>
+  </div>
+<figure class="s8b27988"><img fetchpriority="high" class="s76a7705" src="/assets/covers/why-account-funding-delays-cross-chain-payouts.jpg" alt="Abstract cover artwork"></figure>  <div class="s454fb01"><p>A cross-chain payout waits for the source-chain deposit to confirm, the swap to execute and the destination transaction to be signed and broadcast. Each stage depends on separate network activity, so a displayed deposit or account balance does not necessarily mean the recipient can spend the payout yet.</p>
+
+<h2>Why must a deposit clear before a payout?</h2>
+
+<p>The receiving service must establish that the deposit is valid before treating it as available funds. In Chainflip’s documented flow, a deposit is witnessed by validators and registered on its State Chain; the wait depends mainly on the source chain’s confirmation process. For a closer look at <a href="https://ai-defi-news-ejlpz1jstt4ge8s-wnopl.justblogged.com/chainflip-native-swap-flow-integrators-must-handle" rel="noopener">Chainflip’s native swap flow</a>, see the stages an integrator must handle. A transfer initiated on one chain therefore cannot be treated like an instant update to an account ledger.</p>
+
+<h2>What happens between funding and payout?</h2>
+
+<p>After the deposit is confirmed and recorded, the protocol processes the swap, then prepares a transaction on the destination chain. Chainflip’s documentation describes the payout as an egress transaction: the network constructs it, the authority set signs it, and the network broadcasts it. The destination chain must then process that transaction before the recipient sees a confirmed payment.</p>
+
+<p>Those steps explain why a service may show separate statuses for:</p>
+
+<ul>
+<li>Deposit submitted on the source chain</li>
+<li>Deposit confirmed and witnessed</li>
+<li>Swap executed and payout prepared</li>
+<li>Destination transaction broadcast and confirmed</li>
+</ul>
+
+<p>A service that marks funds as “available” before the deposit clears is showing an internal credit or estimate, not necessarily settled funds. Its own payout queue, checks or processing rules can add time after the on-chain steps; those are separate from the protocol’s confirmation and signing work.</p>
+
+<h2>How can users tell where the delay is?</h2>
+
+<p>Check the transaction status on both chains and identify which step is still pending. A source transaction that has not confirmed points to the sending chain; a confirmed deposit with no swap update points to witnessing or swap processing; a broadcast payout awaiting confirmation points to the destination chain.</p>
+
+<p>For integrators, the practical choice is to show stage-specific statuses and avoid promising a fixed completion time across chains. For users, wait for the destination transaction to confirm before treating the payout as spendable. That distinction separates a funding delay from a failed or missing payment.</p></div>
+  <aside class="sd7a0d45">
+    <h2 class="s45b955b">Related stories</h2>
+    <ul class="s4cfbfd4">
+<li><a href="/why-a-token-trade-shows-as-a-contract-call-in-your-wallet/">Why a token trade shows as a contract call in your wallet</a></li><li><a href="/wallet-swap-or-exchange-for-a-trc-20-token/">Wallet Swap or Exchange for a TRC-20 Token?</a></li><li><a href="/bnb-chain-timestamps-show-block-time-not-send-time/">BNB Chain timestamps show block time, not send time</a></li><li><a href="/base-swap-failed-check-the-cause-before-you-retry/">Base Swap Failed? Check the Cause Before You Retry</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s6d8bab8">
+  <div class="s21d2a1e">
+    <p class="s0024b40">Blockfront</p>
+    <nav class="s1cd1faf" aria-label="Site">
+<a href="/">Front page</a><a href="/archive/">All articles</a><a href="/about/">About us</a><a href="/privacy/">Privacy policy</a>    </nav>
+    <p class="s2b5e948">An independent outlet. Nothing here is financial advice.</p>
+    <p class="s975e619">© 2026 Blockfront</p>
+  </div>
+</footer>
+</body>
+</html>
