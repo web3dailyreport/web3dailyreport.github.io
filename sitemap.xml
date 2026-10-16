@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://web3dailyreport.github.io/</loc><lastmod>2026-10-16T00:11:50+00:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://web3dailyreport.github.io/</loc><lastmod>2026-10-16T00:14:18+00:00</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>https://web3dailyreport.github.io/fireblocks-launches-stablecoin-liquidity-market-for-payments-firms/</loc><lastmod>2026-10-16T00:14:18+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://web3dailyreport.github.io/why-cross-chain-swaps-take-longer-than-token-swaps/</loc><lastmod>2026-10-16T00:11:50+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://web3dailyreport.github.io/how-bridge-and-swap-routing-handles-repeat-transfers/</loc><lastmod>2026-10-15T22:20:15+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://web3dailyreport.github.io/wallet-address-formats-show-where-a-transfer-can-go/</loc><lastmod>2026-10-15T20:01:45+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
@@ -46,12 +47,12 @@
 <url><loc>https://web3dailyreport.github.io/near-intents-halts-service-after-3-8m-exploit-pledges-repayment/</loc><lastmod>2026-10-03T08:18:08+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://web3dailyreport.github.io/blackhole-swap-options-on-avalanche-come-with-a-network-check/</loc><lastmod>2026-10-02T14:35:34+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
 <url><loc>https://web3dailyreport.github.io/base-activates-cobalt-with-conditional-transactions-and-b20-controls/</loc><lastmod>2026-10-01T17:07:48+00:00</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://web3dailyreport.github.io/archive/</loc><lastmod>2026-10-16T00:11:50+00:00</lastmod><priority>0.3</priority></url>
+<url><loc>https://web3dailyreport.github.io/archive/</loc><lastmod>2026-10-16T00:14:18+00:00</lastmod><priority>0.3</priority></url>
 <url><loc>https://web3dailyreport.github.io/about/</loc><lastmod>2026-10-01</lastmod><priority>0.3</priority></url>
 <url><loc>https://web3dailyreport.github.io/privacy/</loc><lastmod>2026-10-01</lastmod><priority>0.3</priority></url>
 <url><loc>https://web3dailyreport.github.io/how-we-report/</loc><lastmod>2026-10-01</lastmod><priority>0.3</priority></url>
-<url><loc>https://web3dailyreport.github.io/page/2/</loc><lastmod>2026-10-16T00:11:50+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://web3dailyreport.github.io/page/3/</loc><lastmod>2026-10-16T00:11:50+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://web3dailyreport.github.io/page/4/</loc><lastmod>2026-10-16T00:11:50+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
-<url><loc>https://web3dailyreport.github.io/page/5/</loc><lastmod>2026-10-16T00:11:50+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://web3dailyreport.github.io/page/2/</loc><lastmod>2026-10-16T00:14:18+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://web3dailyreport.github.io/page/3/</loc><lastmod>2026-10-16T00:14:18+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://web3dailyreport.github.io/page/4/</loc><lastmod>2026-10-16T00:14:18+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
+<url><loc>https://web3dailyreport.github.io/page/5/</loc><lastmod>2026-10-16T00:14:18+00:00</lastmod><changefreq>weekly</changefreq><priority>0.2</priority></url>
 </urlset>
