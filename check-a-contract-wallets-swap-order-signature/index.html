@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contract wallet swap order signature check | Blockfront</title>
+<meta name="description" content="A contract wallet’s swap signature is checked against the exact order digest through ERC-1271; verify the wallet, chain, order fields and returned magic value.">
+<link rel="canonical" href="https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#120a17">
+<meta name="author" content="Blockfront Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blockfront">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Check a contract wallet’s swap order signature">
+<meta property="og:description" content="A contract wallet’s swap signature is checked against the exact order digest through ERC-1271; verify the wallet, chain, order fields and returned magic value.">
+<meta property="og:url" content="https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/">
+<meta property="og:image" content="https://web3dailyreport.github.io/assets/covers/check-a-contract-wallets-swap-order-signature-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Check a contract wallet’s swap order signature"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Check a contract wallet’s swap order signature">
+<meta name="twitter:description" content="A contract wallet’s swap signature is checked against the exact order digest through ERC-1271; verify the wallet, chain, order fields and returned magic value.">
+<meta property="article:published_time" content="2026-10-22T14:10:30+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s3a3a289c47.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blockfront" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/#webpage",
+      "url": "https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/",
+      "name": "Contract wallet swap order signature check | Blockfront",
+      "isPartOf": {
+        "@id": "https://web3dailyreport.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/#article",
+      "headline": "Check a contract wallet’s swap order signature",
+      "isAccessibleForFree": true,
+      "description": "A contract wallet’s swap signature is checked against the exact order digest through ERC-1271; verify the wallet, chain, order fields and returned magic value.",
+      "datePublished": "2026-10-22T14:10:30+00:00",
+      "dateModified": "2026-10-22T14:10:30+00:00",
+      "url": "https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/",
+      "mainEntityOfPage": {
+        "@id": "https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "wordCount": 408,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/check-a-contract-wallets-swap-order-signature-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/check-a-contract-wallets-swap-order-signature-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/check-a-contract-wallets-swap-order-signature-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://web3dailyreport.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Check a contract wallet’s swap order signature",
+          "item": "https://web3dailyreport.github.io/check-a-contract-wallets-swap-order-signature/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://web3dailyreport.github.io/#org",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://web3dailyreport.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web3dailyreport.github.io/#website",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Blockfront reports crypto news: Bitcoin and Ethereum, DeFi protocols, exchanges, regulation, security incidents, funding rounds and network upgrades."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s2c9485b" href="#main">Skip to main content</a>
+<header class="sd3343df">
+  <div class="s417c705">
+    <a class="s783b774" href="/">Blockfront</a>
+    <p class="s99472fa">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s1984bdb s258ddc5">
+  <div class="se79ce3a">
+    <h1 class="sa02954d">Check a contract wallet’s swap order signature</h1>
+<p class="scbb976d">A contract wallet’s swap signature is checked against the exact order digest through ERC-1271; verify the wallet, chain, order fields and returned magic value.</p>    <div class="sa0676ec">
+      <span class="sd4c00f3">Blockfront Editorial</span>
+      <p class="s5866ebd"><time datetime="2026-10-22T14:10:30+00:00">Oct 22, 2026 · 14:10 UTC</time><span class="s06d038c">3 min read</span></p>
+    </div>
+  </div>
+<figure class="s8b27988"><img width="1200" height="630" fetchpriority="high" class="s76a7705" src="/assets/covers/check-a-contract-wallets-swap-order-signature.jpg" alt="Check a contract wallet’s swap order signature"></figure>  <div class="s454fb01"><p>To check a contract wallet’s swap order signature, ask the wallet to validate the exact order digest and confirm it returns ERC-1271’s magic value, <code>0x1626ba7e</code>. Unlike an externally owned account, a contract wallet may use custom rules to decide whether a signature is valid.</p>
+
+<h2>What does a contract wallet sign?</h2>
+<p>For CoW Protocol orders, the order digest is a hash of the order fields and an EIP-712 domain separator. The domain includes the chain ID and the settlement contract, so the same order data on another network can produce a different digest.</p>
+<p>The signature bytes are wallet-specific. As a fuller overview of the swap flow explains, <a href="https://graph.org/cowswap-How-swaps-work-and-when-to-use-them-10-21" rel="noopener">cowswap</a> orders rely on a signature tied to their parameters. For this check, use the submitted order’s actual values, including the sell and buy tokens, amounts, receiver, expiry, and app data.</p>
+
+<h2>How do you verify an ERC-1271 signature?</h2>
+<p>Call the wallet contract’s <code>isValidSignature(bytes32,bytes)</code> function with the order digest and signature. Run the call on the order’s chain, using the wallet address as the contract being queried; a valid response is the four-byte magic value <code>0x1626ba7e</code>.</p>
+<p>A read-only call does not submit a transaction or spend gas. It checks the wallet’s current validation logic and state. A result that differs from the magic value means the wallet did not validate that digest and signature in the state used for the call.</p>
+
+<h2>Which details should you compare?</h2>
+<p>Before treating the result as a match, compare the order shown by the signing flow with the order sent for verification. A valid signature over a different digest does not authorize the order you intend to submit.</p>
+<ul>
+<li>Confirm the chain ID and settlement contract used to build the domain.</li>
+<li>Recompute the digest from the precise order fields, including expiry and app data.</li>
+<li>Check that the order owner and <code>from</code> address identify the contract wallet.</li>
+<li>Pass the exact signature bytes and digest to that wallet’s ERC-1271 method.</li>
+</ul>
+
+<h2>Can a valid signature later fail?</h2>
+<p>Yes. ERC-1271 validation can depend on the wallet’s current owners, modules, or other contract state, so a signature that passes now may fail later if that state changes. For CoW Protocol, the signature is checked as part of order validation and again during settlement; a local check is useful evidence, not a guarantee of later execution.</p>
+<p>The practical test is specific: rebuild the digest from the intended order and network, then call ERC-1271 on the owner wallet and check for the magic value.</p></div>
+  <aside class="sd7a0d45">
+    <h2 class="s45b955b">Related stories</h2>
+    <ul class="s4cfbfd4">
+<li><a href="/occ-rule-leaves-crypto-platform-stablecoin-rewards-in-play/">OCC rule leaves crypto platform stablecoin rewards in play</a></li><li><a href="/budget-funding-before-holding-byreal-perps/">Budget funding before holding Byreal Perps</a></li><li><a href="/fermi-swap-four-checks-before-trading-on-ethereum/">fermi swap: four checks before trading on Ethereum</a></li><li><a href="/baseswap-when-to-swap-tokens-and-when-to-add-liquidity/">BaseSwap: When to Swap Tokens and When to Add Liquidity</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s6d8bab8">
+  <div class="s21d2a1e">
+    <p class="s0024b40">Blockfront</p>
+    <nav class="s1cd1faf" aria-label="Site">
+<a href="/">Front page</a><a href="/archive/">All articles</a><a href="/about/">About us</a><a href="/privacy/">Privacy policy</a><a href="/how-we-report/">How we report</a>    </nav>
+    <p class="s2b5e948">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s975e619">© 2026 Blockfront</p>
+  </div>
+</footer>
+</body>
+</html>
