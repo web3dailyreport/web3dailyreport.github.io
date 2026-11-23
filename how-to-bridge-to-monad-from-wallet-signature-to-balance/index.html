@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en-US" data-mode="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monad bridge: from wallet signature to destination balance</title>
+<meta name="description" content="Monad bridge end to end: your wallet signs a source-chain deposit; finality, attestation and relaying deliver minted or unlocked tokens to your destination balance.">
+<link rel="canonical" href="https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="theme-color" content="#120a17">
+<meta name="author" content="Blockfront Editorial"><meta property="og:type" content="article">
+<meta property="og:site_name" content="Blockfront">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="How to bridge to Monad from wallet signature to balance">
+<meta property="og:description" content="Monad bridge end to end: your wallet signs a source-chain deposit; finality, attestation and relaying deliver minted or unlocked tokens to your destination balance.">
+<meta property="og:url" content="https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/">
+<meta property="og:image" content="https://web3dailyreport.github.io/assets/covers/how-to-bridge-to-monad-from-wallet-signature-to-balance-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="How to bridge to Monad from wallet signature to balance"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How to bridge to Monad from wallet signature to balance">
+<meta name="twitter:description" content="Monad bridge end to end: your wallet signs a source-chain deposit; finality, attestation and relaying deliver minted or unlocked tokens to your destination balance.">
+<meta property="article:published_time" content="2026-11-23T16:18:21+00:00">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/s3a3a289c47.css">
+<link rel="icon" href="/assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="alternate" type="application/rss+xml" title="Blockfront" href="/feed.xml"><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/#webpage",
+      "url": "https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/",
+      "name": "Monad bridge: from wallet signature to destination balance",
+      "isPartOf": {
+        "@id": "https://web3dailyreport.github.io/#website"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "Article",
+      "@id": "https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/#article",
+      "headline": "How to bridge to Monad from wallet signature to balance",
+      "isAccessibleForFree": true,
+      "description": "Monad bridge end to end: your wallet signs a source-chain deposit; finality, attestation and relaying deliver minted or unlocked tokens to your destination balance.",
+      "datePublished": "2026-11-23T16:18:21+00:00",
+      "dateModified": "2026-11-23T16:18:21+00:00",
+      "url": "https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/",
+      "mainEntityOfPage": {
+        "@id": "https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/#webpage"
+      },
+      "inLanguage": "en-US",
+      "author": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "wordCount": 479,
+      "image": [
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/how-to-bridge-to-monad-from-wallet-signature-to-balance-16x9.jpg",
+          "width": 1200,
+          "height": 675
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/how-to-bridge-to-monad-from-wallet-signature-to-balance-4x3.jpg",
+          "width": 1200,
+          "height": 900
+        },
+        {
+          "@type": "ImageObject",
+          "url": "https://web3dailyreport.github.io/assets/covers/how-to-bridge-to-monad-from-wallet-signature-to-balance-1x1.jpg",
+          "width": 1200,
+          "height": 1200
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://web3dailyreport.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "How to bridge to Monad from wallet signature to balance",
+          "item": "https://web3dailyreport.github.io/how-to-bridge-to-monad-from-wallet-signature-to-balance/"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://web3dailyreport.github.io/#org",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/apple-touch-icon.png"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://web3dailyreport.github.io/assets/og.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "publishingPrinciples": "https://web3dailyreport.github.io/how-we-report/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://web3dailyreport.github.io/#website",
+      "name": "Blockfront",
+      "url": "https://web3dailyreport.github.io/",
+      "publisher": {
+        "@id": "https://web3dailyreport.github.io/#org"
+      },
+      "inLanguage": "en-US",
+      "description": "Blockfront reports crypto news: Bitcoin and Ethereum, DeFi protocols, exchanges, regulation, security incidents, funding rounds and network upgrades."
+    }
+  ]
+}
+</script>
+</head>
+<body data-page="post">
+<a class="s2c9485b" href="#main">Skip to main content</a>
+<header class="sd3343df">
+  <div class="s417c705">
+    <a class="s783b774" href="/">Blockfront</a>
+    <p class="s99472fa">Crypto markets, protocols and policy</p>
+  </div>
+</header>
+
+<main id="main">
+<article class="s1984bdb s258ddc5">
+  <div class="se79ce3a">
+    <h1 class="sa02954d">How to bridge to Monad from wallet signature to balance</h1>
+<p class="scbb976d">Monad bridge end to end: your wallet signs a source-chain deposit; finality, attestation and relaying deliver minted or unlocked tokens to your destination balance.</p>    <div class="sa0676ec">
+      <span class="sd4c00f3">Blockfront Editorial</span>
+      <p class="s5866ebd"><time datetime="2026-11-23T16:18:21+00:00">Nov 23, 2026 · 16:18 UTC</time><span class="s06d038c">3 min read</span></p>
+    </div>
+  </div>
+<figure class="s8b27988"><img width="1200" height="630" fetchpriority="high" class="s76a7705" src="/assets/covers/how-to-bridge-to-monad-from-wallet-signature-to-balance.jpg" alt="How to bridge to Monad from wallet signature to balance"></figure>  <div class="s454fb01"><p>A Monad bridge transfer moves from wallet signature to destination balance by locking or burning tokens on the source chain, attesting that event after finality, then relaying proof so the destination contract mints or unlocks tokens to you.</p>
+<ul>
+<li>Approve the ERC-20 token, then sign the deposit.</li>
+<li>Wait for source-chain finality and message attestation.</li>
+<li>The destination transaction mints or unlocks tokens to your wallet.</li>
+</ul>
+<p>The <a href="https://monad-bridge.org" rel="noopener">Monad bridge</a> is the app for moving supported assets between Ethereum and Monad. Knowing which app handles the transfer helps you identify the route before signing; the supported assets and any fees depend on that route.</p>
+<h2>What happens after you sign a Monad bridge deposit?</h2>
+<p>The deposit contract locks or burns your tokens and emits a message describing the transfer and recipient. For ERC-20 assets, approval may be a separate transaction, so you can see two wallet prompts before the cross-chain wait begins.</p>
+<p>Next, the source chain must reach finality: the point at which its transaction is treated as settled. Ethereum uses epochs of 32 slots, each 12 seconds long; its two-epoch finality works out to about 12.8 minutes. That interval can account for most of the wait before attestation starts.</p>
+<p>After finality, a messaging network verifies the event. In Wormhole, 13 of 19 Guardians must sign a VAA, or Verified Action Approval, for the message to reach the destination. Wormhole’s <a href="https://wormhole.com/docs/protocol/infrastructure/vaas/" rel="nofollow noopener">VAA documentation</a> describes that threshold; its <a href="https://wormhole.com/docs/products/token-transfers/native-token-transfers/concepts/architecture/" rel="nofollow noopener">NTT documentation</a> explains how locking or burning on the source corresponds to unlocking or minting on the destination.</p>
+<p>Axelar uses General Message Passing (GMP): validators verify the source event and approve the message for the destination gateway, then a relayer submits it for execution. Both patterns carry proof because one chain cannot read another chain’s state directly. They are examples of how cross-chain messaging can work; the route’s actual provider determines its process.</p>
+<h2>Why can the balance take longer to appear?</h2>
+<p>Most of the wait on a finality-based route is the source chain settling, not the message traveling between chains. Paying a higher fee does not shorten that finality requirement; it may cover gas for later execution or relaying, but total time also depends on attestation and destination delivery.</p>
+<p>Use the source transaction status to tell whether your deposit was included, then look for the transfer’s attestation or message status, and finally confirm that the destination transaction executed. A source deposit alone does not mean the destination balance has arrived. Ethereum’s <a href="https://ethereum.org/developers/docs/consensus-mechanisms/pos/" rel="nofollow noopener">proof-of-stake documentation</a> describes how checkpoint finality works.</p>
+<p>Before starting, keep MON available for Monad transaction gas, since Monad documentation identifies MON as its gas token and describes EVM compatibility. Check the selected route’s supported asset and recipient details, and treat the destination balance as complete only after execution.</p>
+<ul>
+<li>Confirm the asset, destination chain and recipient address.</li>
+<li>Sign any token approval, then the deposit.</li>
+<li>Track finality, attestation and delivery in that order.</li>
+<li>Verify the destination balance after execution.</li>
+</ul></div>
+  <aside class="sd7a0d45">
+    <h2 class="s45b955b">Related stories</h2>
+    <ul class="s4cfbfd4">
+<li><a href="/us-wins-authority-to-seize-1-2bn-in-binance-theft/">US wins authority to seize $1.2bn in Binance theft</a></li><li><a href="/tether-backs-scrypts-expansion-into-institutional-payments/">Tether backs SCRYPT’s expansion into institutional payments</a></li><li><a href="/hong-kong-gazettes-bill-to-license-crypto-service-firms/">Hong Kong Gazettes Bill to License Crypto Service Firms</a></li><li><a href="/how-to-revoke-a-trc-20-approval-to-zero-on-tronscan/">How to Revoke a TRC-20 Approval to Zero on TRONSCAN</a></li>    </ul>
+  </aside>
+</article>
+</main>
+
+<footer class="s6d8bab8">
+  <div class="s21d2a1e">
+    <p class="s0024b40">Blockfront</p>
+    <nav class="s1cd1faf" aria-label="Site">
+<a href="/">Front page</a><a href="/archive/">All articles</a><a href="/about/">About us</a><a href="/privacy/">Privacy policy</a><a href="/how-we-report/">How we report</a>    </nav>
+    <p class="s2b5e948">Reporting and analysis — not a recommendation to buy or sell.</p>
+    <p class="s975e619">© 2026 Blockfront</p>
+  </div>
+</footer>
+</body>
+</html>
